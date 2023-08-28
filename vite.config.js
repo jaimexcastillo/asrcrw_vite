@@ -10,7 +10,7 @@ export default defineConfig({
     lintOnSave: false,
     resolve:{
         alias: {
-            '@': fileURLToPath(new URL('./src/', import.meta.url))
+            '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
     css: {
