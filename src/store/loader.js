@@ -16,7 +16,7 @@ export const useLoader = defineStore('loader', {
         this.loader = val
       },
       async setProducts(){
-           await useProductsStore().getProdcuts()
+          //  await useProductsStore().getProdcuts()
       },
       setShoppingModal(product,val){
         this.itemShoppingModal = product

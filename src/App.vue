@@ -3,7 +3,7 @@
     <off-header-component /> 
     <header-component />
     
-    <router-view />
+    <router-view v-if="loader.loader != true"  />
     <vue-loader-component v-if="loader.loader" />
     <shopping-modal-component v-if="loader.shoppingModal" />
 
@@ -21,19 +21,19 @@ export default {
       loader: useLoader()
     }
   },
-  beforeMount(){
-    useProductsStore().getProdcuts()
-        this.loader.setLoader(true)
-  },
-  mounted(){
-    let self = this
-    setTimeout(function() {
-            self.loader.setLoader(false);
-            self.loader.setProducts()
-      }, 2000);
+  async mounted(){
+    this.loader.setLoader(true);
 
+    await useProductsStore().getProdcuts()
+  
+    if(useProductsStore().products?.length > 0 )
+    this.loader.setLoader(false)
+  
     console.log(process.env.NODE_ENV);
 
+  },
+  watch: {
+    // 'useProductsStore().products': {}
   }
 }
 </script>
