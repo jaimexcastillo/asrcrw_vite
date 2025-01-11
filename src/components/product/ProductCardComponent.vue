@@ -8,7 +8,7 @@
         >   
             <div class="product__item"  v-bind:class="[ product?.sale?.sale ? 'sale' : 0 ]">
                 <router-link :to=" '/product/'+product.title.replace(/ /g,'-')" > 
-                    <div class="product__item__pic set-bg" data-setbg="" v-bind:style="[ product.img_default.includes('data:image/jpeg;base64') ? { backgroundImage: 'url(' + `${product.img_default}` + ')' } : { backgroundImage: 'url(' + `data:image/jpeg;base64,${product.img_default}` + ')' }]">
+                    <div class="product__item__pic set-bg" data-setbg="" v-bind:style="[ product.img_default.includes('data:image') ? { backgroundImage: 'url(' + `${product.img_default}` + ')' } : { backgroundImage: 'url(' + `data:image/jpeg;base64,${product.img_default}` + ')' }]">
                         <span v-if="product.new"  class="label">Nuevo</span>
                         <span v-if="product.sale.sale" class="label">Oferta</span>
 
