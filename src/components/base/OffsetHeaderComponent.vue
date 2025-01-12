@@ -17,11 +17,6 @@
                             </div>
                             <div class="header__top__hover">
                                 <span>MXN <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>MXN</li>
-                                    <li>EUR</li>
-                                    <li>USD</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
