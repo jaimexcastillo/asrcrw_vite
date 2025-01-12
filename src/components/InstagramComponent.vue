@@ -21,8 +21,7 @@
                 <div class="col-lg-4">
                     <div class="instagram__text">
                         <h2>Instagram</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                        <p>usa nuestro hashtag oficial</p>
                         <h3>#Asrcrw</h3>
                     </div>
                 </div>

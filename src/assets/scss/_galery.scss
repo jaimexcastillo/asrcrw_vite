@@ -1,0 +1,16 @@
+.galery{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: -3rem;
+    >.grid-area {
+        border: 0px solid blue;
+        display: grid;
+        gap: 0;
+        
+        img{
+            padding: 0 !important;
+        }
+      }
+
+}

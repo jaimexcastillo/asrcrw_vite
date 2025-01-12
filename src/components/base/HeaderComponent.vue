@@ -14,9 +14,8 @@
                                     <li><router-link to="/shop/accesorios">Accesorios</router-link></li>
                                 </ul>
                             </li>
-                            <li v-bind:class="[active === '/about'?  'active' : '']" @click="active ='/about' " ><router-link to="/about">Conocenos</router-link></li>
-                            <!-- <li><a href="./blog.html">Blog</a></li> -->
-                            <!-- <li><a href="./contact.html">Contacts</a></li> -->
+                            <li v-bind:class="[active === '/about'?  'active' : '']" @click="active ='/about' " ><router-link to="/galery">Galeria</router-link></li>
+
                         </ul>
                     </nav>
                 </div>

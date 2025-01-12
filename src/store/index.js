@@ -1,3 +1,5 @@
 export * from './products.js' 
 export * from './cart'
 export * from './loader'
+export * from './carousel.js'
+export * from './galery.js'
