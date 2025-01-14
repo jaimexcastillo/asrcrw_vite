@@ -14,6 +14,7 @@
                     <img :src="item.img" :alt="item.product_url">
                 </div>
             </Slide>
+            
             <template  #addons>
                 <Navigation ></Navigation>
                 <Pagination></Pagination>
