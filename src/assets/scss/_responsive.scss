@@ -8,6 +8,7 @@
   
   /* Medium Device = 1200px */
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
+ 
     .categories__text h2 {
       font-size: 26px;
     }
@@ -114,6 +115,32 @@
   
   /* Wide Mobile = 480px */
   @media only screen and (max-width: 767px) {
+    .hero-height{
+      min-height: 40vh;
+      img{
+        // height: 40vh;
+        object-fit: cover;
+        object-position: 88% 0;
+        background-size: auto;
+        height: 100%;
+        // padding-left: 10rem;
+      }
+      .carousel__viewport{
+        height: 40vh;
+        .carousel__track{
+          height: 40vh;
+
+          a,div {
+            height: 40vh;
+          }
+        }
+      }
+    }
+    .header-asrcrw{
+      height: 5rem;
+      display: flex;
+      align-items: center;
+    }
     .canvas__open {
       display: block;
       font-size: 22px;

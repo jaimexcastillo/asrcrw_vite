@@ -1,6 +1,6 @@
 <template>
     <section class="hero" >
-        <carousel :wrapAround="true" :autoplay="10000"  :wheelControl="false"  class="hero-height">
+        <carousel :wrapAround="true" :autoplay="0"  :wheelControl="false"  class="hero-height">
             <Slide v-for="(item , index) in carousel" :key="index">
                 <router-link v-if="item.product_url" :to="`product/${item.product_url}`" class="white">
                 <img :src="item.img" :alt="item.product_url">

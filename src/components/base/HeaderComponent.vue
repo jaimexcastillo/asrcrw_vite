@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-            <div class="row d-flex justify-content-between">
+            <div class="row d-flex justify-content-between header-asrcrw">
                 <div class="" style="width: 33%">
                     <nav class="header__menu mobile-menu">
                         <ul>
